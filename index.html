@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatbook.cz — Kompletní platforma pro investiční byty</title>
+  <meta name="description" content="Flatbook.cz je kompletní platforma pro správu investičních bytů. Od výběru nemovitosti až po správu nájemníků — vše na jednom místě.">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Google Fonts - DM Serif Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGACE ========== -->
+  <nav class="fixed-nav bg-walls" id="navbar">
+    <div class="container d-flex flex-nowrap align-items-center justify-content-between">
+      <div class="nav-links d-none d-lg-flex align-items-center gap-4">
+        <a href="#jak-to-funguje" class="nav-link-item">Jak to funguje</a>
+        <a href="#moduly" class="nav-link-item">Moduly</a>
+        <a href="#porovnani" class="nav-link-item">Porovnání</a>
+      </div>
+
+      <a href="#" class="nav-logo">
+        <span class="logo-text">Flatbook</span>
+        <span class="logo-dot">.cz</span>
+      </a>
+
+      <div class="nav-right d-flex align-items-center gap-3">
+        <a href="#cenik" class="nav-link-item d-none d-lg-inline">Ceník</a>
+        <a href="#kontakt" class="btn btn-outline-dark btn-nav">Začít zdarma <i class="bi bi-arrow-right ms-2"></i></a>
+        <button class="btn-menu d-lg-none" id="menuToggle" aria-label="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MOBILNÍ MENU ========== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header d-flex justify-content-between align-items-center">
+      <span class="logo-text">Flatbook<span class="logo-dot">.cz</span></span>
+      <button class="btn-menu" id="menuClose" aria-label="Zavřít"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="#jak-to-funguje">Jak to funguje</a>
+      <a href="#moduly">Moduly</a>
+      <a href="#porovnani">Porovnání</a>
+      <a href="#cenik">Ceník</a>
+      <a href="#recenze">Recenze</a>
+      <a href="#kontakt" class="btn btn-outline-dark w-100 mt-4">Začít zdarma <i class="bi bi-arrow-right ms-2"></i></a>
+    </div>
+  </div>
+  <div class="mobile-menu-overlay" id="menuOverlay"></div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero bg-walls" id="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="hero-badge mb-4">
+            <span class="badge-dot"></span>
+            Kompletní platforma pro investiční byty
+          </div>
+          <h1>
+            Vše pro vaše <em>investiční byty</em> na jednom místě.
+          </h1>
+          <p class="hero-sub mt-4">
+            Od analýzy trhu přes výběr nemovitosti, financování, rekonstrukci až po správu nájemníků. <em>Žádné tabulky, žádný chaos.</em>
+          </p>
+          <div class="hero-checks mt-4">
+            <div class="check-item">
+              <i class="bi bi-check2"></i>
+              <span>Reálný přehled o výnosnosti každého bytu</span>
+            </div>
+            <div class="check-item">
+              <i class="bi bi-check2"></i>
+              <span>Automatizovaná správa nájemníků a plateb</span>
+            </div>
+            <div class="check-item">
+              <i class="bi bi-check2"></i>
+              <span>Všechny dokumenty a smlouvy na jednom místě</span>
+            </div>
+          </div>
+          <div class="hero-ctas mt-5 d-flex flex-wrap gap-3">
+            <a href="#kontakt" class="btn btn-primary-dark">
+              Vyzkoušet zdarma <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a href="#jak-to-funguje" class="btn btn-outline-dark">
+              Jak to funguje <i class="bi bi-plus-lg ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-5 mt-lg-0">
+          <div class="hero-visual">
+            <div class="hero-card hero-card-main">
+              <div class="card-header-mini">
+                <i class="bi bi-building"></i> Přehled portfolia
+              </div>
+              <div class="card-stat-row">
+                <div class="card-stat">
+                  <span class="stat-value">4</span>
+                  <span class="stat-label">Byty</span>
+                </div>
+                <div class="card-stat">
+                  <span class="stat-value text-accent">8,2%</span>
+                  <span class="stat-label">Průměrný výnos</span>
+                </div>
+                <div class="card-stat">
+                  <span class="stat-value">94%</span>
+                  <span class="stat-label">Obsazenost</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-card hero-card-float">
+              <div class="card-header-mini">
+                <i class="bi bi-graph-up-arrow"></i> Měsíční příjem
+              </div>
+              <div class="card-big-number">+68 400 Kč</div>
+              <div class="card-trend"><i class="bi bi-arrow-up-short"></i> 12% vs minulý měsíc</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== USP / STATISTIKY ========== -->
+  <section class="usp bg-limet" id="usp">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <div class="usp-item">
+            <span class="usp-number" data-target="1250">0</span>
+            <span class="usp-plus">+</span>
+            <p class="usp-label">uživatelů na platformě</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="usp-item">
+            <span class="usp-number" data-target="3800">0</span>
+            <span class="usp-plus">+</span>
+            <p class="usp-label">spravovaných bytů</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="usp-item">
+            <span class="usp-number" data-target="98">0</span>
+            <span class="usp-plus">%</span>
+            <p class="usp-label">spokojenost klientů</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="usp-item">
+            <span class="usp-number" data-target="15">0</span>
+            <span class="usp-plus">min</span>
+            <p class="usp-label">průměrná doba onboardingu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== JAK TO FUNGUJE ========== -->
+  <section class="process bg-walls pt-section pb-section" id="jak-to-funguje">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Jak to <em>funguje?</em></h2>
+        <p class="section-sub">Od prvního kroku až po stabilní pasivní příjem. Flatbook vás provede celým procesem.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="process-visual">
+            <div class="process-mockup">
+              <div class="mockup-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="mockup-title">flatbook.cz/dashboard</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-sidebar">
+                  <div class="sidebar-item active"><i class="bi bi-grid"></i></div>
+                  <div class="sidebar-item"><i class="bi bi-building"></i></div>
+                  <div class="sidebar-item"><i class="bi bi-people"></i></div>
+                  <div class="sidebar-item"><i class="bi bi-cash-stack"></i></div>
+                  <div class="sidebar-item"><i class="bi bi-file-earmark-text"></i></div>
+                  <div class="sidebar-item"><i class="bi bi-gear"></i></div>
+                </div>
+                <div class="mockup-content">
+                  <div class="mockup-chart">
+                    <div class="chart-bar" style="height: 40%"></div>
+                    <div class="chart-bar" style="height: 55%"></div>
+                    <div class="chart-bar" style="height: 45%"></div>
+                    <div class="chart-bar" style="height: 70%"></div>
+                    <div class="chart-bar active" style="height: 85%"></div>
+                    <div class="chart-bar" style="height: 65%"></div>
+                    <div class="chart-bar" style="height: 75%"></div>
+                    <div class="chart-bar" style="height: 90%"></div>
+                  </div>
+                  <div class="mockup-cards-row">
+                    <div class="mini-card"></div>
+                    <div class="mini-card"></div>
+                    <div class="mini-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="process-steps">
+            <div class="step-item">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h3>Analyzujte trh</h3>
+                <p>Přistupte k aktuálním datům o cenách, výnosnosti a obsazenosti v jednotlivých lokalitách. Rozhodujte se na základě dat, ne pocitů.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h3>Vyhodnoťte nemovitost</h3>
+                <p>Naše kalkulačka vám okamžitě spočítá předpokládaný výnos, cash flow a návratnost investice včetně všech nákladů.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <h3>Zajistěte financování</h3>
+                <p>Porovnejte hypoteční nabídky přímo v platformě. Spočítejte si optimální strukturu financování pro maximální výnosnost.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">04</div>
+              <div class="step-content">
+                <h3>Spravujte vše z jednoho místa</h3>
+                <p>Nájemníci, platby, smlouvy, údržba — všechno v přehledném dashboardu. Automatické upozornění na důležité události.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MODULY / FUNKCE ========== -->
+  <section class="modules bg-chair pt-section pb-section" id="moduly">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Všechny nástroje <em>na jednom místě</em></h2>
+        <p class="section-sub">Každý modul řeší konkrétní část investičního procesu. Použijte je všechny nebo jen ty, které potřebujete.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="module-card">
+            <div class="module-icon"><i class="bi bi-search"></i></div>
+            <h3>Analýza trhu</h3>
+            <p>Reálná data o cenách, nájemném a obsazenosti v jednotlivých lokalitách. Porovnání výnosnosti mezi městskými částmi.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="module-card">
+            <div class="module-icon"><i class="bi bi-calculator"></i></div>
+            <h3>Investiční kalkulačka</h3>
+            <p>Okamžitý výpočet výnosnosti, cash flow, ROI a návratnosti. Včetně všech skrytých nákladů — daň, pojištění, údržba.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="module-card">
+            <div class="module-icon"><i class="bi bi-bank"></i></div>
+            <h3>Financování</h3>
+            <p>Porovnání hypotečních nabídek. Modelování různých scénářů financování a jejich dopad na celkovou výnosnost.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="module-card">
+            <div class="module-icon"><i class="bi bi-people"></i></div>
+            <h3>Správa nájemníků</h3>
+            <p>Evidence nájemníků, automatické připomínky splatnosti, komunikace a historie všech interakcí na jednom místě.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="module-card">
+            <div class="module-icon"><i class="bi bi-cash-stack"></i></div>
+            <h3>Finance a platby</h3>
+            <p>Přehled příjmů a výdajů za každý byt. Automatické párování plateb, export pro účtování, daňový přehled.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="module-card">
+            <div class="module-icon"><i class="bi bi-file-earmark-text"></i></div>
+            <h3>Dokumenty a smlouvy</h3>
+            <p>Šablony nájemních smluv, předávacích protokolů a dalších dokumentů. Vše bezpečně uloženo v cloudu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POROVNÁNÍ ========== -->
+  <section class="comparison bg-walls pt-section pb-section" id="porovnani">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Proč <em>Flatbook</em> a ne tabulky?</h2>
+        <p class="section-sub">Porovnejte si, jak se liší správa investičních bytů s Flatbookem oproti tradičním přístupům.</p>
+      </div>
+      <div class="comparison-table">
+        <div class="comparison-row comparison-header">
+          <div class="comparison-feature"></div>
+          <div class="comparison-old">Tabulky &amp; Excel</div>
+          <div class="comparison-new">Flatbook.cz</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-feature">Přehled o výnosnosti</div>
+          <div class="comparison-old"><i class="bi bi-x-lg"></i> Ruční výpočty, zastaralé</div>
+          <div class="comparison-new"><i class="bi bi-check2"></i> Automaticky, v reálném čase</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-feature">Správa nájemníků</div>
+          <div class="comparison-old"><i class="bi bi-x-lg"></i> Roztroušená v e-mailech</div>
+          <div class="comparison-new"><i class="bi bi-check2"></i> Centrálně, s historií</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-feature">Sledování plateb</div>
+          <div class="comparison-old"><i class="bi bi-x-lg"></i> Ruční kontrola výpisů</div>
+          <div class="comparison-new"><i class="bi bi-check2"></i> Automatické párování</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-feature">Dokumenty</div>
+          <div class="comparison-old"><i class="bi bi-x-lg"></i> Složky na disku</div>
+          <div class="comparison-new"><i class="bi bi-check2"></i> Cloud se šablonami</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-feature">Daňový přehled</div>
+          <div class="comparison-old"><i class="bi bi-x-lg"></i> Jednou ročně, stres</div>
+          <div class="comparison-new"><i class="bi bi-check2"></i> Průběžně, s exportem</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-feature">Analýza nových příležitostí</div>
+          <div class="comparison-old"><i class="bi bi-x-lg"></i> Pocit a odhad</div>
+          <div class="comparison-new"><i class="bi bi-check2"></i> Data-driven rozhodování</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ZELENÝ CTA BANNER ========== -->
+  <section class="cta-banner bg-limet">
+    <div class="container text-center">
+      <h2>Přestaňte spravovat byty <em>v chaosu.</em></h2>
+      <p class="mt-3">Přidejte se k 1 250+ investorům, kteří už používají Flatbook.</p>
+      <a href="#kontakt" class="btn btn-primary-dark mt-4">
+        Začít zdarma <i class="bi bi-arrow-right ms-2"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== CENÍK ========== -->
+  <section class="pricing bg-walls pt-section pb-section" id="cenik">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Jednoduchý a <em>transparentní</em> ceník</h2>
+        <p class="section-sub">Začněte zdarma. Platíte až když platforma generuje hodnotu.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="price-card">
+            <div class="price-tier">Start</div>
+            <div class="price-amount">0 Kč<span>/měsíčně</span></div>
+            <p class="price-desc">Pro začínající investory s 1 bytem</p>
+            <div class="divider"></div>
+            <ul class="price-features">
+              <li><i class="bi bi-check2"></i> 1 nemovitost</li>
+              <li><i class="bi bi-check2"></i> Investiční kalkulačka</li>
+              <li><i class="bi bi-check2"></i> Základní dashboard</li>
+              <li><i class="bi bi-check2"></i> Evidence nájemníků</li>
+            </ul>
+            <a href="#kontakt" class="btn btn-outline-dark w-100 mt-4">Začít zdarma <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="price-card price-card-featured">
+            <div class="price-badge">Nejoblíbenější</div>
+            <div class="price-tier">Pro</div>
+            <div class="price-amount">490 Kč<span>/měsíčně</span></div>
+            <p class="price-desc">Pro aktivní investory s portfoliem</p>
+            <div class="divider"></div>
+            <ul class="price-features">
+              <li><i class="bi bi-check2"></i> Neomezené nemovitosti</li>
+              <li><i class="bi bi-check2"></i> Všechny moduly</li>
+              <li><i class="bi bi-check2"></i> Automatické platby</li>
+              <li><i class="bi bi-check2"></i> Šablony dokumentů</li>
+              <li><i class="bi bi-check2"></i> Daňový export</li>
+              <li><i class="bi bi-check2"></i> Prioritní podpora</li>
+            </ul>
+            <a href="#kontakt" class="btn btn-primary-dark w-100 mt-4">Zvolit Pro <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="price-card">
+            <div class="price-tier">Enterprise</div>
+            <div class="price-amount">Na míru</div>
+            <p class="price-desc">Pro správce a developery</p>
+            <div class="divider"></div>
+            <ul class="price-features">
+              <li><i class="bi bi-check2"></i> Vše z Pro</li>
+              <li><i class="bi bi-check2"></i> API přístup</li>
+              <li><i class="bi bi-check2"></i> Vlastní integrace</li>
+              <li><i class="bi bi-check2"></i> Dedikovaná podpora</li>
+              <li><i class="bi bi-check2"></i> SLA garantie</li>
+            </ul>
+            <a href="#kontakt" class="btn btn-outline-dark w-100 mt-4">Kontaktovat nás <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RECENZE ========== -->
+  <section class="reviews bg-chair pt-section pb-section" id="recenze">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Co říkají <em>naši klienti</em></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review-text">"Konečně mám přehled o tom, kolik mi který byt reálně vydělává. Předtím jsem to řešil v Excelu a bylo to peklo."</p>
+            <div class="review-author">
+              <strong>Martin K.</strong>
+              <span>4 investiční byty, Praha</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review-text">"Šablony smluv a automatické připomínky mi ušetří hodiny měsíčně. Nájemce si teď spravuju skoro sám."</p>
+            <div class="review-author">
+              <strong>Lucie S.</strong>
+              <span>2 byty, Brno</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review-text">"Díky investiční kalkulačce jsem zjistil, že byt, který jsem chtěl koupit, by měl záporný cash flow. Ušetřil mi statisíce."</p>
+            <div class="review-author">
+              <strong>Tomáš P.</strong>
+              <span>1 byt + hledání dalších, Ostrava</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq bg-walls pt-section pb-section" id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h2>Časté <em>dotazy</em></h2>
+          <p class="section-sub mt-3">Nenašli jste odpověď? <a href="#kontakt">Napište nám</a>, rádi pomůžeme.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Pro koho je Flatbook určený?</span>
+                <i class="bi bi-plus-lg"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Flatbook je určený pro každého, kdo investuje do nemovitostí — ať už máte jeden byt nebo desítky. Hodí se pro individuální investory, správce nemovitostí i realitní kanceláře.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Mohu Flatbook vyzkoušet zdarma?</span>
+                <i class="bi bi-plus-lg"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Ano, tarif Start je zcela zdarma a umožňuje spravovat 1 nemovitost bez časového omezení. Na tarif Pro můžete přejít kdykoliv.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Jak se Flatbook liší od InvestCzech?</span>
+                <i class="bi bi-plus-lg"></i>
+              </button>
+              <div class="faq-answer">
+                <p>InvestCzech se zabývá investováním do nemovitostí více teoreticky a obecně. Flatbook je praktická platforma — každodenní nástroj pro konkrétní kroky: od analýzy přes koupi až po správu a optimalizaci.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Jsou má data v bezpečí?</span>
+                <i class="bi bi-plus-lg"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Ano. Všechna data jsou šifrována a uložena na zabezpečených serverech v EU. Dodržujeme GDPR a pravidelně provádíme bezpečnostní audity.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Mohu importovat existující data?</span>
+                <i class="bi bi-plus-lg"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Ano, Flatbook podporuje import z Excelu a CSV. Můžete také propojit bankovní účet pro automatické párování plateb.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter bg-limet">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h2>Buďte v obraze o <em>investičních nemovitostech</em></h2>
+          <p class="mt-2">Tipy, analýzy a novinky z trhu. Žádný spam, jen hodnota.</p>
+        </div>
+        <div class="col-lg-5 mt-4 mt-lg-0">
+          <form class="newsletter-form d-flex gap-2">
+            <input type="email" class="form-control" placeholder="Váš email" required>
+            <button type="submit" class="btn btn-primary-dark flex-shrink-0">
+              Odebírat <i class="bi bi-check-lg ms-1"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== KONTAKTNÍ FORMULÁŘ ========== -->
+  <section class="contact bg-walls pt-section pb-section" id="kontakt">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Začněte investovat <em>chytřeji</em></h2>
+          <p class="section-sub mt-3">Nechte nám na sebe kontakt a my se vám ozveme. Nebo rovnou vytvořte účet zdarma.</p>
+
+          <form class="contact-form mt-5">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label class="form-label">Jméno a příjmení</label>
+                <input type="text" class="form-control" placeholder="Jan Novák" required>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="jan@email.cz" required>
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label">Telefon</label>
+                <input type="tel" class="form-control" placeholder="+420 123 456 789">
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label">Počet nemovitostí</label>
+                <select class="form-select">
+                  <option>Zatím žádná</option>
+                  <option>1</option>
+                  <option>2-5</option>
+                  <option>6-10</option>
+                  <option>10+</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Zpráva (nepovinné)</label>
+                <textarea class="form-control" rows="3" placeholder="Napište nám, co vás zajímá..."></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gdpr" required>
+                  <label class="form-check-label" for="gdpr">
+                    Souhlasím se zpracováním osobních údajů dle <a href="#">GDPR</a>.
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-dark">
+                  Odeslat <i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <i class="bi bi-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@flatbook.cz">info@flatbook.cz</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-telephone"></i>
+              <div>
+                <strong>Telefon</strong>
+                <a href="tel:+420123456789">+420 123 456 789</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-geo-alt"></i>
+              <div>
+                <strong>Adresa</strong>
+                <span>Praha, Česká republika</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="trust-badges mt-5">
+            <div class="trust-item">
+              <i class="bi bi-shield-check"></i>
+              <span>GDPR compliant</span>
+            </div>
+            <div class="trust-item">
+              <i class="bi bi-lock"></i>
+              <span>Šifrovaná data</span>
+            </div>
+            <div class="trust-item">
+              <i class="bi bi-headset"></i>
+              <span>Podpora v CZ/SK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer bg-walls">
+    <div class="container">
+      <div class="divider mb-5"></div>
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <span class="logo-text">Flatbook<span class="logo-dot">.cz</span></span>
+          <p class="footer-desc mt-3">Kompletní platforma pro správu investičních bytů. Od analýzy až po pasivní příjem.</p>
+          <div class="footer-social mt-3">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Platforma</h4>
+          <ul class="footer-links">
+            <li><a href="#moduly">Moduly</a></li>
+            <li><a href="#cenik">Ceník</a></li>
+            <li><a href="#jak-to-funguje">Jak to funguje</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Společnost</h4>
+          <ul class="footer-links">
+            <li><a href="#">O nás</a></li>
+            <li><a href="#">Kariéra</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Podpora</h4>
+          <ul class="footer-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">GDPR</a></li>
+            <li><a href="#">Obchodní podmínky</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Kontakt</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@flatbook.cz">info@flatbook.cz</a></li>
+            <li><a href="tel:+420123456789">+420 123 456 789</a></li>
+            <li><span>Praha, CZ</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="divider mt-5 mb-4"></div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <p>&copy; 2026 Flatbook.cz. Všechna práva vyhrazena.</p>
+        <p class="footer-credit">Vytvořeno s <i class="bi bi-heart-fill"></i> v Praze</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
