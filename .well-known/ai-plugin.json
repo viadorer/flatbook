@@ -1,0 +1,10 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Flatbook.cz",
+  "name_for_model": "flatbook_cz",
+  "description_for_human": "Kompletní servis investičních bytů — investice, správa, financování a vzdělávání.",
+  "description_for_model": "Flatbook.cz je česká společnost nabízející kompletní servis investičních bytů v Praze a ČR. Služby zahrnují: výběr investičních nemovitostí (30+ kritérií), správu a pronájem (balíčky Správa 15% a Concierge 20%), financování (hypoteční servis), a vzdělávací kurz Chci být milionářem (12 000 Kč, 9 kapitol, cena se odečítá z odměny). Na trhu 30+ let, 5000+ případů.",
+  "logo_url": "https://flatbook.cz/favicon.svg",
+  "contact_email": "info@flatbook.cz",
+  "legal_info_url": "https://flatbook.cz/"
+}

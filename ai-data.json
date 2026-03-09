@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "name": "Flatbook.cz",
+  "url": "https://flatbook.cz",
+  "description": "Kompletní servis investičních bytů v Praze a České republice. Od výběru nemovitosti přes financování až po správu nájemníků.",
+  "language": "cs",
+  "category": "Real Estate Investment Services",
+  "founded": "1999",
+  "location": {
+    "city": "Praha",
+    "country": "CZ"
+  },
+  "contact": {
+    "email": "info@flatbook.cz",
+    "phone": "+420123456789",
+    "career_email": "kariera@flatbook.cz"
+  },
+  "services": [
+    {
+      "name": "Investování do nemovitostí",
+      "description": "Výběr investičních bytů na základě 30+ kritérií, kompletní zajištění financování a rekonstrukce, profesionální správa nájemníků.",
+      "url": "https://flatbook.cz/"
+    },
+    {
+      "name": "Správa a pronájem nemovitostí",
+      "description": "Kompletní property management — hledání nájemníků, vyúčtování, údržba, právní servis. Balíčky Správa (15 %) a Concierge (20 %).",
+      "url": "https://flatbook.cz/pronajimame.html"
+    },
+    {
+      "name": "Financování investičních nemovitostí",
+      "description": "Hypoteční servis — zajištění nejlepších podmínek díky přímé spolupráci s bankami, odhad zdarma, kompletní dokumentace.",
+      "url": "https://flatbook.cz/financovani.html"
+    },
+    {
+      "name": "Kurz Chci být milionářem",
+      "description": "Investiční vzdělávací kurz. 9 kapitol, 14+ hodin videa, individuální konzultace. Cena 12 000 Kč — odečítá se z odměny při využití služeb Flatbook.",
+      "url": "https://flatbook.cz/masterclass.html",
+      "price": {
+        "amount": 12000,
+        "currency": "CZK"
+      }
+    }
+  ],
+  "key_facts": {
+    "years_on_market": "30+",
+    "business_cases": "5000+",
+    "team_experts": "8+",
+    "values": ["Stabilita", "Výnos", "Rozvoj"]
+  },
+  "social_profiles": {
+    "facebook": "",
+    "linkedin": "",
+    "instagram": "",
+    "youtube": ""
+  },
+  "pages": [
+    {"url": "https://flatbook.cz/", "title": "Chci investovat", "type": "homepage"},
+    {"url": "https://flatbook.cz/pronajimame.html", "title": "Pronajímáme", "type": "service"},
+    {"url": "https://flatbook.cz/financovani.html", "title": "Financování", "type": "service"},
+    {"url": "https://flatbook.cz/masterclass.html", "title": "Kurz Chci být milionářem", "type": "product"},
+    {"url": "https://flatbook.cz/kariera.html", "title": "Kariéra", "type": "careers"}
+  ]
+}

@@ -1144,6 +1144,426 @@ img {
   font-size: 12px;
 }
 
+/* ---- Subpage Hero ---- */
+.subpage-hero {
+  padding-top: 140px;
+  padding-bottom: var(--section-padding);
+}
+
+/* ---- Image Placeholders ---- */
+.img-placeholder {
+  background: var(--color-chair);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 320px;
+  border: 2px dashed rgba(0,0,0,0.12);
+}
+
+.img-placeholder i {
+  font-size: 48px;
+  color: var(--color-muted);
+}
+
+.img-placeholder span {
+  font-size: 14px;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.img-placeholder-lg {
+  min-height: 420px;
+}
+
+.img-placeholder-portrait {
+  min-height: 280px;
+  max-width: 240px;
+}
+
+.img-placeholder-wide {
+  min-height: 360px;
+  width: 100%;
+}
+
+.img-divider {
+  width: 100%;
+}
+
+/* ---- CTA Inline ---- */
+.cta-inline {
+  padding: 32px 40px;
+}
+
+.cta-inline h3 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.cta-inline p {
+  color: var(--color-muted);
+  font-size: 16px;
+}
+
+/* ---- Highlight Banner ---- */
+.highlight-banner h2 {
+  font-size: clamp(28px, 4vw, 40px);
+}
+
+/* ---- Pricing Table ---- */
+.pricing-table {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pricing-header {
+  display: grid;
+  grid-template-columns: 1fr 160px 160px;
+  gap: 0;
+  margin-bottom: 8px;
+}
+
+.pricing-header .pricing-label {
+  /* empty column */
+}
+
+.pricing-plan {
+  text-align: center;
+  padding: 24px 16px;
+  background: var(--color-chair);
+}
+
+.pricing-plan h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.pricing-pct {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--color-dark);
+  line-height: 1.1;
+}
+
+.pricing-plan p {
+  font-size: 13px;
+  color: var(--color-muted);
+  margin: 4px 0 0;
+}
+
+.pricing-plan-highlight {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.pricing-plan-highlight h3,
+.pricing-plan-highlight .pricing-pct {
+  color: var(--color-white);
+}
+
+.pricing-plan-highlight p {
+  color: rgba(255,255,255,0.6);
+}
+
+.pricing-body {
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.pricing-row {
+  display: grid;
+  grid-template-columns: 1fr 160px 160px;
+  gap: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  align-items: center;
+}
+
+.pricing-row .pricing-label {
+  padding: 12px 0;
+  font-size: 15px;
+  color: var(--color-body);
+}
+
+.pricing-row .pricing-col:not(.pricing-label) {
+  text-align: center;
+  padding: 12px 0;
+  font-size: 18px;
+  color: var(--color-accent);
+}
+
+/* ---- Lead Text ---- */
+.lead-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--color-body);
+}
+
+/* ---- Service List ---- */
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  padding: 10px 0;
+  padding-left: 28px;
+  position: relative;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.service-list li::before {
+  content: "\F26E";
+  font-family: "bootstrap-icons";
+  color: var(--color-accent);
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+/* ---- Comparison Table (Financování) ---- */
+.comparison-table {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.comparison-header {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 0;
+  margin-bottom: 4px;
+}
+
+.comparison-option {
+  text-align: center;
+  padding: 16px;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  color: var(--color-body);
+}
+
+.comparison-option.comparison-highlight {
+  background: var(--color-limet);
+  font-weight: 700;
+}
+
+.comparison-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  align-items: center;
+}
+
+.comparison-row .comparison-label {
+  padding: 12px 0;
+  font-size: 15px;
+}
+
+.comparison-row .comparison-col:not(.comparison-label) {
+  text-align: center;
+  padding: 12px 0;
+  font-size: 15px;
+}
+
+.comparison-row .comparison-highlight {
+  background: rgba(210, 228, 181, 0.2);
+}
+
+.comparison-row-total {
+  border-bottom: 2px solid var(--color-dark);
+}
+
+.comparison-row-total .comparison-col {
+  font-size: 17px;
+}
+
+.comparison-divider {
+  height: 2px;
+  background: rgba(0,0,0,0.1);
+  margin: 4px 0;
+}
+
+/* ---- Myths Grid ---- */
+.myth-item {
+  display: flex;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  height: 100%;
+}
+
+.myth-number {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  color: var(--color-muted);
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 36px;
+  padding-right: 16px;
+  border-right: 2px solid rgba(0,0,0,0.1);
+}
+
+.myth-content h4 {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--color-dark);
+}
+
+.myth-content p {
+  font-size: 15px;
+  color: var(--color-body);
+  margin: 0;
+}
+
+/* ---- Advantage Items ---- */
+.advantage-item {
+  display: flex;
+  gap: 20px;
+  padding: 24px 0;
+  height: 100%;
+}
+
+.advantage-number {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--color-muted);
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 40px;
+  padding-right: 16px;
+  border-right: 2px solid rgba(0,0,0,0.12);
+}
+
+.advantage-content h3 {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.advantage-content p {
+  font-size: 15px;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+/* ---- Specialist Card ---- */
+.specialist-card {
+  background: var(--color-chair);
+  padding: 28px;
+}
+
+.specialist-card h3 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.specialist-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.specialist-contacts .contact-info-item {
+  gap: 10px;
+}
+
+/* ---- Topic Cards (Masterclass) ---- */
+.topic-card {
+  display: flex;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.topic-icon {
+  font-size: 28px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.topic-content h4 {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: var(--color-dark);
+}
+
+.topic-content p {
+  font-size: 15px;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+/* ---- Course Price ---- */
+.course-price {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  color: var(--color-dark);
+  line-height: 1;
+}
+
+/* ---- Job Listings (Kariéra) ---- */
+.job-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-item {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--color-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.job-item:hover {
+  opacity: 0.7;
+}
+
+/* ---- Benefit List (Kariéra) ---- */
+.benefit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit-list li {
+  padding: 10px 0;
+  padding-left: 28px;
+  position: relative;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.benefit-list li::before {
+  content: "\F26E";
+  font-family: "bootstrap-icons";
+  color: var(--color-accent);
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+/* ---- Active Nav Link ---- */
+.nav-link-item.active {
+  font-weight: 700;
+}
+
+.mobile-menu-links a.active {
+  font-weight: 700;
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 991px) {
   :root {
@@ -1151,6 +1571,10 @@ img {
   }
 
   .hero {
+    padding-top: 120px;
+  }
+
+  .subpage-hero {
     padding-top: 120px;
   }
 
@@ -1164,19 +1588,26 @@ img {
     margin-bottom: 40px;
   }
 
-  .comparison-row {
-    grid-template-columns: 1fr;
-    gap: 8px;
-    padding: 16px 0;
+  .pricing-header,
+  .pricing-row {
+    grid-template-columns: 1fr 120px 120px;
   }
 
-  .comparison-header {
-    display: none;
-  }
-
-  .comparison-old,
-  .comparison-new {
+  .pricing-row .pricing-label {
     font-size: 14px;
+  }
+
+  .comparison-table .comparison-header,
+  .comparison-table .comparison-row {
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+
+  .comparison-row .comparison-label {
+    font-size: 14px;
+  }
+
+  .cta-inline {
+    padding: 24px;
   }
 }
 
@@ -1186,6 +1617,10 @@ img {
   }
 
   .hero {
+    padding-top: 100px;
+  }
+
+  .subpage-hero {
     padding-top: 100px;
   }
 
@@ -1210,23 +1645,79 @@ img {
     padding: 24px;
   }
 
-  .comparison-row {
-    grid-template-columns: 1fr;
-    gap: 6px;
-  }
-
-  .comparison-feature {
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 4px;
-  }
-
   .newsletter-form {
     flex-direction: column;
   }
 
   .price-card {
     padding: 24px;
+  }
+
+  /* Pricing table mobile: stack columns */
+  .pricing-header {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pricing-header .pricing-label {
+    display: none;
+  }
+
+  .pricing-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 12px 0;
+  }
+
+  .pricing-row .pricing-label {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .pricing-row .pricing-col:not(.pricing-label) {
+    display: inline;
+    font-size: 16px;
+  }
+
+  /* Comparison table mobile: stack */
+  .comparison-table .comparison-header {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .comparison-table .comparison-header .comparison-label {
+    display: none;
+  }
+
+  .comparison-table .comparison-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 12px 0;
+  }
+
+  .comparison-row .comparison-label {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  /* Myths */
+  .myth-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .myth-number {
+    border-right: none;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding-right: 0;
+    padding-bottom: 8px;
+    min-width: auto;
+  }
+
+  .img-placeholder {
+    min-height: 220px;
+  }
+
+  .img-placeholder-lg {
+    min-height: 280px;
   }
 }
 

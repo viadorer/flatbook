@@ -1,0 +1,22 @@
+{
+  "name": "Flatbook.cz",
+  "short_name": "Flatbook",
+  "description": "Kompletní servis investičních bytů. Od výběru nemovitosti až po správu nájemníků.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFAED",
+  "theme_color": "#FFFAED",
+  "lang": "cs",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ]
+}

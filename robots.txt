@@ -1,0 +1,7 @@
+# Flatbook.cz — robots.txt
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /serve.py
+
+Sitemap: https://flatbook.cz/sitemap.xml
