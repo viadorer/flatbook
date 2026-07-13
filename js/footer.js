@@ -4,6 +4,13 @@
     '<footer class="footer bg-walls">' +
       '<div class="container">' +
         '<div class="divider mb-5"></div>' +
+        '<div class="footer-brands mb-5" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;padding:24px;background:var(--color-chair);">' +
+          '<div style="font-family:var(--font-serif);font-size:18px;color:var(--color-dark);min-width:200px;">Naše skupina značek</div>' +
+          '<div style="display:flex;flex-wrap:wrap;gap:32px;">' +
+            '<a href="index.html" style="color:var(--color-dark);"><strong>Flatbook.cz</strong> <span style="color:var(--color-muted);font-size:14px;">— investiční byty</span></a>' +
+            '<a href="https://vzornynajemce.cz" target="_blank" rel="noopener" style="color:var(--color-dark);"><strong>VzornyNajemce.cz</strong> <span style="color:var(--color-muted);font-size:14px;">— pronájem s garancí</span> <i class="bi bi-box-arrow-up-right" style="font-size:12px;"></i></a>' +
+          '</div>' +
+        '</div>' +
         '<div class="row">' +
           '<div class="col-lg-3 mb-4 mb-lg-0">' +
             '<span class="logo-text">Flatbook<span class="logo-dot">.cz</span></span>' +

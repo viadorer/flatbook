@@ -334,31 +334,38 @@ img {
   flex-shrink: 0;
 }
 
-/* Hero Visual - App mockup */
+/* Hero Visual - Photo + overlay card */
 .hero-visual {
   position: relative;
-  background: var(--color-chair);
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  background: transparent;
+  padding: 0;
+  display: block;
+}
+
+.hero-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-chair);
+}
+
+.hero-card-overlay {
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  background: var(--color-walls);
+  padding: 24px 28px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.18);
+  z-index: 2;
+  min-width: 240px;
+  border-left: 4px solid var(--color-limet);
 }
 
 .hero-card {
   background: var(--color-white);
   border: 1px solid rgba(0,0,0,0.08);
   padding: 20px 24px;
-}
-
-.hero-card-main {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-card-float {
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
 }
 
 .card-header-mini {
@@ -422,10 +429,12 @@ img {
 }
 
 .usp-icon {
-  font-size: clamp(32px, 4vw, 44px);
+  font-family: var(--font-serif);
+  font-size: clamp(36px, 4vw, 48px);
   color: var(--color-dark);
   line-height: 1;
   margin-bottom: 4px;
+  font-style: italic;
 }
 
 .usp-tagline {
@@ -463,6 +472,43 @@ img {
 .process-visual {
   position: sticky;
   top: 120px;
+}
+
+.process-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-chair);
+}
+
+.process-quote {
+  background: var(--color-walls);
+  border-left: 4px solid var(--color-limet);
+  padding: 24px 28px;
+  margin-top: -56px;
+  margin-left: 24px;
+  margin-right: 0;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.12);
+}
+
+.process-quote p {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  line-height: 1.4;
+  font-style: italic;
+  color: var(--color-dark);
+  margin: 0 0 12px;
+}
+
+.process-quote .quote-author {
+  font-size: 13px;
+  color: var(--color-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .process-mockup {
@@ -697,10 +743,74 @@ img {
 }
 
 .result-img {
-  height: 180px;
+  height: 220px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: var(--color-chair);
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+  position: relative;
+}
+
+.result-img-num {
+  font-family: var(--font-serif);
+  font-size: 56px;
+  color: var(--color-white);
+  line-height: 1;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  font-style: italic;
+}
+
+/* ---- Gallery / Vybíráme pro vás ---- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.gallery-item {
+  aspect-ratio: 3 / 4;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-chair);
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.4) 100%);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+.gallery-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--color-walls);
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-dark);
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 575px) {
+  .gallery-grid { grid-template-columns: 1fr; }
 }
 
 .result-body {
@@ -747,15 +857,12 @@ img {
 }
 
 .audience-icon {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  background: var(--color-limet);
+  font-family: var(--font-serif);
+  font-size: 52px;
   color: var(--color-dark);
+  line-height: 1;
   margin-bottom: 20px;
+  letter-spacing: -1px;
 }
 
 .audience-card h3 {
@@ -1081,6 +1188,7 @@ img {
 
 .trust-item i {
   color: var(--color-accent);
+  display: none;
 }
 
 /* ---- Footer ---- */
@@ -1152,14 +1260,26 @@ img {
 
 /* ---- Image Placeholders ---- */
 .img-placeholder {
-  background: var(--color-chair);
+  background-color: var(--color-chair);
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 12px;
   min-height: 320px;
+  width: 100%;
+}
+
+/* Show dashed border + icon ONLY when no background image is set */
+.img-placeholder:not([style*="background-image"]) {
   border: 2px dashed rgba(0,0,0,0.12);
+}
+
+.img-placeholder[style*="background-image"] i,
+.img-placeholder[style*="background-image"] span {
+  display: none;
 }
 
 .img-placeholder i {
