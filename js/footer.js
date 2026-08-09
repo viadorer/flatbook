@@ -27,6 +27,7 @@
             '<ul class="footer-links">' +
               '<li><a href="index.html">Investování</a></li>' +
               '<li><a href="pronajimame.html">Pronájem a správa</a></li>' +
+              '<li><a href="developerske-projekty.html">Developerské projekty</a></li>' +
               '<li><a href="financovani.html">Financování</a></li>' +
             '</ul>' +
           '</div>' +

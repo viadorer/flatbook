@@ -9,6 +9,7 @@
         '<div class="nav-links d-none d-lg-flex align-items-center gap-4">' +
           '<a href="index.html" class="nav-link-item' + ac('index') + '">Chci investovat</a>' +
           '<a href="pronajimame.html" class="nav-link-item' + ac('pronajimame') + '">Pronajímáme</a>' +
+          '<a href="developerske-projekty.html" class="nav-link-item' + ac('developerske-projekty') + '">Developerské projekty</a>' +
           '<a href="financovani.html" class="nav-link-item' + ac('financovani') + '">Financování</a>' +
         '</div>' +
         '<a href="index.html" class="nav-logo">' +
@@ -32,6 +33,7 @@
       '<div class="mobile-menu-links">' +
         '<a href="index.html"' + (page === 'index' ? ' class="active"' : '') + '>Chci investovat</a>' +
         '<a href="pronajimame.html"' + (page === 'pronajimame' ? ' class="active"' : '') + '>Pronajímáme</a>' +
+        '<a href="developerske-projekty.html"' + (page === 'developerske-projekty' ? ' class="active"' : '') + '>Developerské projekty</a>' +
         '<a href="financovani.html"' + (page === 'financovani' ? ' class="active"' : '') + '>Financování</a>' +
         '<a href="index.html#kontakt" class="btn btn-outline-dark w-100 mt-4">Kontakt <i class="bi bi-arrow-right ms-2"></i></a>' +
       '</div>' +

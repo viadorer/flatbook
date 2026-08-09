@@ -10,6 +10,7 @@ Flatbook.cz je česká společnost specializující se na investice do nemovitos
 
 - **Investování do nemovitostí** — Výběr investičních bytů na základě 30+ kritérií, kompletní zajištění financování a rekonstrukce, profesionální správa nájemníků a průběžná optimalizace.
 - **Správa a pronájem nemovitostí** — Kompletní property management včetně hledání nájemníků, vyúčtování, údržby a právního servisu. Balíčky Správa (15 %) a Concierge (20 %).
+- **Developerské projekty — první rok správy zdarma** — Speciální nabídka pro majitele nových, dosud nebydlených bytů v čerstvě dokončených developerských projektech v Praze, Kladně, Berouně a Plzni. Rok 1 bez odměny za správu, roky 2–3 dle standardního ceníku. Podmínka: 3letý závazek.
 - **Financování** — Zajištění hypotéky za nejvýhodnějších podmínek díky přímé spolupráci s bankami, odhad nemovitosti zdarma, kompletní dokumentace.
 - **Vzdělávání** — Investiční kurz "Chci být milionářem" (12 000 Kč). 9 kapitol, 14+ hodin video materiálu, individuální konzultace. Cena kurzu se odečítá z odměny při využití našich služeb.
 
@@ -33,6 +34,7 @@ Flatbook.cz je česká společnost specializující se na investice do nemovitos
 
 - [Hlavní stránka — Chci investovat](https://flatbook.cz/)
 - [Pronajímáme — Správa nemovitostí](https://flatbook.cz/pronajimame.html)
+- [Developerské projekty — první rok správy zdarma](https://flatbook.cz/developerske-projekty.html)
 - [Financování — Hypoteční servis](https://flatbook.cz/financovani.html)
 - [Kurz Chci být milionářem](https://flatbook.cz/masterclass.html)
 - [Kariéra](https://flatbook.cz/kariera.html)
